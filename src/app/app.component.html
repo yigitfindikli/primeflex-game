@@ -1,8 +1,61 @@
 <div class="flex flex-column w-full h-full md:flex-row">
-    <div class="container p-2 flex w-full md:w-6 bg-bluegray-100">
-        <h3>Container</h3>
+    <div class="wrapper flex w-full md:w-6">
+        <div class="container px-4">
+            <div class="header">
+                <h2 class="text-4xl mb-3 flex justify-content-between" style="font-family: inherit;">PrimeFlex <span class="font-italic">Faze {{level + 1}}</span></h2>
+                <p class="py-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+                    soluta, at placeat similique modi nesciunt saepe nemo
+                    molestias atque, quisquam temporibus necessitatibus
+                    assumenda. Laudantium, excepturi consectetur. Libero impedit
+                    nostrum incidunt?
+                </p>
+
+                <ul class="list-disc text-700">
+                    <li>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Ullam eaque, nesciunt accusantium sed, voluptates
+                        architecto distinctio beatae fugiat, pariatur doloribus
+                        itaque vero error nostrum quam consectetur similique
+                        numquam consequatur veniam!
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Ullam eaque, nesciunt accusantium sed, voluptates
+                        architecto distinctio beatae fugiat, pariatur doloribus
+                        itaque vero error nostrum quam consectetur similique
+                        numquam consequatur veniam!
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Ullam eaque, nesciunt accusantium sed, voluptates
+                        architecto distinctio beatae fugiat, pariatur doloribus
+                        itaque vero error nostrum quam consectetur similique
+                        numquam consequatur veniam!
+                    </li>
+                </ul>
+                <p class="pt-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+                    soluta, at placeat similique modi nesciunt saepe nemo
+                    molestias atque, quisquam temporibus necessitatibus
+                    assumenda. Laudantium, excepturi consectetur. Libero impedit
+                    nostrum incidunt?
+                </p>
+            </div>
+
+            <div class="form flex flex-column">
+<pre>
+<div class="px-2">
+&lt;div class="flex
+<input pInputText class="w-full my-1 border-0 h-2rem" [(ngModel)]="className" />
+"&gt;&lt;/div&gt;
+</div>
+</pre>
+                <button pButton class="align-self-end" [disabled]="!isValid" label="Next Faze" (click)="onFazeButtonClick()"></button>
+            </div>
+        </div>
     </div>
-    <div class="flex p-2 md:w-6 w-full bg-green-100">
-        <app-playground class="w-full h-full"></app-playground>
+    <div class="flex md:w-6 w-full bg-blue-900">
+        <app-playground [currentFaze]="gameList[level]" (onValid)="onValidation($event)" [className]="className" class="w-full h-full p-6"></app-playground>
     </div>
 </div>

@@ -1,13 +1,15 @@
-<div class="flex w-full h-full bg-green-100">
-    <div class="area sticky top-0 overflow-hidden w-full h-full">
-		<div class="bg-sc z-3 bg-cyan-400 justify-content-end">
-			<div class="flex justify-content-center align-items-center w-3rem h-3rem p-4">
-				<span class="text-4xl text-gray-700 pi pi-calendar"></span>
+<div class="flex w-full h-full">
+    <div class="area sticky top-0 overflow-hidden w-full h-full" *ngIf="currentFaze">
+		<div *ngFor="let item of currentFaze.items">
+			<div class="bg-sc z-3" *ngIf="item.isBg" [ngClass]="item.class">
+				<div class="flex justify-content-center align-items-center w-3rem h-3rem p-4">
+					<span class="ground text-4xl text-gray-700 pi" [ngClass]="item.icon"></span>
+				</div>
 			</div>
-		</div>
-		<div class="player-sc z-4">
-			<div class="flex justify-content-center align-items-center w-3rem h-3rem p-4">
-				<span class="text-4xl pi pi-calendar"></span>
+			<div class="player-sc z-4" [ngClass]="className" *ngIf="!item.isBg">
+				<div class="flex justify-content-center align-items-center w-3rem h-3rem p-4">
+					<span class="player text-4xl" [ngClass]="item.icon"></span>
+				</div>
 			</div>
 		</div>
 	</div>

@@ -1,0 +1,30 @@
+{
+    "data": [
+        {
+            "faze": 1,
+            "items":[
+                {
+                    "icon": "pi pi-calendar",
+                    "isBg": true,
+                    "class": "justify-content-end"
+                },
+                {
+                    "icon": "pi pi-calendar"
+                }
+            ]
+        },
+        {
+            "faze": 2,
+            "items":[
+                {
+                    "icon": "pi pi-calendar",
+                    "isBg": true,
+                    "class": "justify-content-center"
+                },
+                {
+                    "icon": "pi pi-calendar"
+                }
+            ]
+        }
+    ]
+}
