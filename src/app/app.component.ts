@@ -32,7 +32,13 @@ export class AppComponent {
         }
     }
 
-    onFazeButtonClick() {
+    onEnter() {
+        if (this.isValid && this.level < this.gameList.length - 1) {
+            this.nextFaze();
+        }
+    }
+
+    nextFaze() {
         if (this.isValid) {
             if (this.level < this.gameList.length - 1) {
                 this.className = '';

@@ -2,7 +2,8 @@
     <div class="wrapper flex w-full md:w-6">
         <div class="container px-4">
             <div class="header">
-                <h2 class="text-4xl mb-3 flex justify-content-between" style="font-family: inherit;">PrimeFlex <span class="font-italic">Faze {{level + 1}}</span></h2>
+                <h2 class="text-4xl mb-3 flex justify-content-between" style="font-family: inherit;">PrimeFlex <span
+                        class="font-italic">Faze {{level + 1}}</span></h2>
                 <p class="py-2">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
                     soluta, at placeat similique modi nesciunt saepe nemo
@@ -44,18 +45,20 @@
             </div>
 
             <div class="form flex flex-column">
-<pre>
+                <pre>
 <div class="px-2">
 &lt;div class="flex
-<input pInputText class="w-full my-1 border-0 h-2rem" [(ngModel)]="className" />
+<input pInputText class="w-full my-1 border-0 h-2rem" (keydown.enter)="onEnter()" [(ngModel)]="className" />
 "&gt;&lt;/div&gt;
 </div>
 </pre>
-                <button pButton class="align-self-end" [disabled]="!isValid" label="Next Faze" (click)="onFazeButtonClick()"></button>
+                <button pButton class="align-self-end" [disabled]="!isValid" label="Next Faze"
+                    (click)="nextFaze()"></button>
             </div>
         </div>
     </div>
     <div class="flex md:w-6 w-full bg-blue-900">
-        <app-playground [currentFaze]="gameList[level]" (onValid)="onValidation($event)" [className]="className" class="w-full h-full p-6"></app-playground>
+        <app-playground [currentFaze]="gameList[level]" (onValid)="onValidation($event)" [className]="className"
+            class="w-full h-full p-6"></app-playground>
     </div>
 </div>

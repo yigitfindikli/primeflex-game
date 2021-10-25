@@ -25,6 +25,32 @@
                     "icon": "pi pi-calendar"
                 }
             ]
+        },
+        {
+            "faze": 3,
+            "items":[
+                {
+                    "icon": "pi pi-calendar",
+                    "isBg": true,
+                    "class": "align-items-end"
+                },
+                {
+                    "icon": "pi pi-calendar"
+                }
+            ]
+        },
+        {
+            "faze": 4,
+            "items":[
+                {
+                    "icon": "pi pi-calendar",
+                    "isBg": true,
+                    "class": "align-items-center"
+                },
+                {
+                    "icon": "pi pi-calendar"
+                }
+            ]
         }
     ]
 }
