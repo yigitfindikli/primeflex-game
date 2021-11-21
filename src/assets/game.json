@@ -2,12 +2,13 @@
     "data": [
         {
             "faze": 1,
-            "items":[
+            "class": "justify-content-end",
+            "gameItems":[
                 {
-                    "icon": "pi pi-calendar",
-                    "isBg": true,
-                    "class": "justify-content-end"
-                },
+                    "icon": "pi pi-calendar"
+                }
+            ],
+            "bgItems":[
                 {
                     "icon": "pi pi-calendar"
                 }
@@ -15,12 +16,14 @@
         },
         {
             "faze": 2,
-            "items":[
+            "class": "justify-content-center",
+            "gameItems":[
                 {
-                    "icon": "pi pi-calendar",
-                    "isBg": true,
-                    "class": "justify-content-center"
-                },
+                    "icon": "pi pi-calendar"
+                }
+            ],
+            "bgItems": [
+
                 {
                     "icon": "pi pi-calendar"
                 }
@@ -28,12 +31,13 @@
         },
         {
             "faze": 3,
-            "items":[
+            "class": "align-items-end",
+            "gameItems":[
                 {
-                    "icon": "pi pi-calendar",
-                    "isBg": true,
-                    "class": "align-items-end"
-                },
+                    "icon": "pi pi-calendar"
+                }
+            ],
+            "bgItems": [
                 {
                     "icon": "pi pi-calendar"
                 }
@@ -41,14 +45,21 @@
         },
         {
             "faze": 4,
-            "items":[
-                {
-                    "icon": "pi pi-calendar",
-                    "isBg": true,
-                    "class": "align-items-center"
-                },
+            "class": "justify-content-center",
+            "gameItems":[
                 {
                     "icon": "pi pi-calendar"
+                },
+                {
+                    "icon": "pi pi-key"
+                }
+            ],
+            "bgItems": [
+                {
+                    "icon": "pi pi-calendar"
+                },
+                {
+                    "icon": "pi pi-key"
                 }
             ]
         }
