@@ -33,7 +33,6 @@ export class PlaygroundComponent implements OnInit, OnChanges {
                 let groundRect = ground?.getBoundingClientRect();
                 let playerRect = player?.getBoundingClientRect();
 
-                console.log(player.children[0].className === ground.children[0].className)
                 if (groundRect && playerRect && player.children[0].className === ground.children[0].className && groundRect.top === playerRect.top && groundRect.left === playerRect.left) {
                     if (index === playerEls.length - 1) {
                         this.onValid.emit(true);
