@@ -25,16 +25,25 @@ export class PlaygroundComponent implements OnInit, OnChanges {
 
     isValid() {
         setTimeout(() => {
-            let groundEl = document.getElementsByClassName('ground')[0]?.getBoundingClientRect();
-            let playerEl = document.getElementsByClassName('player')[0]?.getBoundingClientRect();
-            if (groundEl && playerEl) {
-                if (groundEl.top === playerEl.top && groundEl.left === playerEl.left) {
-                    this.onValid.emit(true)
+            let groundEls = Array.from(document.getElementsByClassName('ground'));
+            let playerEls = Array.from(document.getElementsByClassName('player'));
+
+            for (let [index, player] of playerEls.entries()) {
+                let ground = groundEls[index];
+                let groundRect = ground?.getBoundingClientRect();
+                let playerRect = player?.getBoundingClientRect();
+
+                console.log(player.children[0].className === ground.children[0].className)
+                if (groundRect && playerRect && player.children[0].className === ground.children[0].className && groundRect.top === playerRect.top && groundRect.left === playerRect.left) {
+                    if (index === playerEls.length - 1) {
+                        this.onValid.emit(true);
+                    }
                 }
                 else {
-                    this.onValid.emit(false)
+                    this.onValid.emit(false);
                 }
             }
+
         }, 50);
     }
 }
