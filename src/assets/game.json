@@ -1,7 +1,8 @@
 {
     "data": [
         {
-            "faze": 1,
+            "faze": "1",
+            "level": 0,
             "class": "justify-content-end",
             "gameItems":[
                 {
@@ -15,7 +16,8 @@
             ]
         },
         {
-            "faze": 2,
+            "faze": "2",
+            "level": 1,
             "class": "justify-content-center",
             "gameItems":[
                 {
@@ -30,7 +32,8 @@
             ]
         },
         {
-            "faze": 3,
+            "faze": "3",
+            "level": 2,
             "class": "align-items-end",
             "gameItems":[
                 {
@@ -44,7 +47,8 @@
             ]
         },
         {
-            "faze": 4,
+            "faze": "4",
+            "level": 3,
             "class": "justify-content-center",
             "gameItems":[
                 {
@@ -64,7 +68,8 @@
             ]
         },
         {
-            "faze": 5,
+            "faze": "5",
+            "level": 4,
             "class": "justify-content-end",
             "gameItems":[
                 {

@@ -2,8 +2,19 @@
     <div class="wrapper flex w-full md:w-6">
         <div class="container px-4">
             <div class="header">
-                <h2 class="text-4xl mb-3 flex justify-content-between" style="font-family: inherit;">PrimeFlex <span
-                        class="font-italic">Faze {{level + 1}}</span></h2>
+                <div class="flex justify-content-between my-4 align-items-center">
+                    <h2 class="text-4xl m-0" style="font-family: inherit;">PrimeFlex</h2>
+                    <div >
+                        <button pButton class="p-button-text" icon="pi pi-angle-left" [disabled]="!prevActive" (click)="prev()"></button>
+                        <p-dropdown [(ngModel)]="level" [options]="gameList" (onChange)="onDropdownChange()" class="mx-2" styleClass="border-none" optionLabel="faze" optionValue="level">
+                            <ng-template pTemplate="selectedItem">
+                                Faze {{level + 1}}
+                            </ng-template>
+                        </p-dropdown>
+                        <button pButton class="p-button-text" icon="pi pi-angle-right" [disabled]="!nextActive" (click)="next()"></button>
+                    </div>
+                </div>
+
                 <p class="py-2">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
                     soluta, at placeat similique modi nesciunt saepe nemo
@@ -48,7 +59,7 @@
                 <pre>
 <div class="px-2">
 &lt;div class="flex
-<input pInputText class="w-full my-1 border-0 h-2rem" (keydown.enter)="onEnter()" [(ngModel)]="className" />
+<input pInputText class="w-full my-1 border-0 h-2rem" (input)="onInput()" (keydown.enter)="onEnter()" [(ngModel)]="className" />
 "&gt;&lt;/div&gt;
 </div>
 </pre>
