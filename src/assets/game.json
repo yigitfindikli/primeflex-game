@@ -15,11 +15,11 @@
                 }
             ],
             "tips": [
-                "justify-items-start to to justify items against the start of the container’s main axis.",
-                "justify-items-center to to justify items against the center of the container’s main axis.",
-                "justify-items-end to to justify items against the end of the container’s main axis.",
-                "justify-items-around to justify items along the container’s main axis such that there is an equal amount of space on each side of each item.",
-                "justify-items-between to justify items along the container’s main axis such that there is an equal amount of space between each item."
+                "justify-content-start: Items are positioned at the beginning of the container.",
+                "justify-content-center: Items are positioned in the center of the container.",
+                "justify-content-end: Items are positioned at the end of the container.",
+                "justify-content-around: Items will have space before, between, and after them.",
+                "justify-content-between: Items will have space between them."
             ]
         },
         {
@@ -36,11 +36,128 @@
                 {
                     "icon": "pi pi-calendar"
                 }
+            ],
+            "tips": [
+                "justify-content-start: Items are positioned at the beginning of the container.",
+                "justify-content-center: Items are positioned in the center of the container.",
+                "justify-content-end: Items are positioned at the end of the container.",
+                "justify-content-around: Items will have space before, between, and after them.",
+                "justify-content-between: Items will have space between them."
             ]
         },
         {
             "faze": "3",
             "level": 2,
+            "class": "justify-content-around",
+            "gameItems":[
+                {
+                    "icon": "pi pi-calendar"
+                },
+                {
+                    "icon": "pi pi-key"
+                }
+            ],
+            "bgItems": [
+
+                {
+                    "icon": "pi pi-calendar"
+                },
+                {
+                    "icon": "pi pi-key"
+                }
+            ],
+            "tips": [
+                "justify-content-start: Items are positioned at the beginning of the container.",
+                "justify-content-center: Items are positioned in the center of the container.",
+                "justify-content-end: Items are positioned at the end of the container.",
+                "justify-content-around: Items will have space before, between, and after them.",
+                "justify-content-between: Items will have space between them.",
+                "justify-content-evenly: Items will have equal space around them."
+            ]
+        },
+        {
+            "faze": "4",
+            "level": 3,
+            "class": "justify-content-evenly",
+            "gameItems":[
+                {
+                    "icon": "pi pi-calendar"
+                },
+                {
+                    "icon": "pi pi-key"
+                }
+            ],
+            "bgItems": [
+
+                {
+                    "icon": "pi pi-calendar"
+                },
+                {
+                    "icon": "pi pi-key"
+                }
+            ],
+            "tips": [
+                "justify-content-start: Items are positioned at the beginning of the container.",
+                "justify-content-center: Items are positioned in the center of the container.",
+                "justify-content-end: Items are positioned at the end of the container.",
+                "justify-content-around: Items will have space before, between, and after them.",
+                "justify-content-between: Items will have space between them.",
+                "justify-content-evenly: Items will have equal space around them."
+            ]
+        },
+        {
+            "faze": "5",
+            "level": 4,
+            "class": "justify-content-between",
+            "gameItems":[
+                {
+                    "icon": "pi pi-calendar"
+                },
+                {
+                    "icon": "pi pi-key"
+                }
+            ],
+            "bgItems": [
+
+                {
+                    "icon": "pi pi-calendar"
+                },
+                {
+                    "icon": "pi pi-key"
+                }
+            ],
+            "tips": [
+                "justify-content-start: Items are positioned at the beginning of the container.",
+                "justify-content-center: Items are positioned in the center of the container.",
+                "justify-content-end: Items are positioned at the end of the container.",
+                "justify-content-around: Items will have space before, between, and after them.",
+                "justify-content-between: Items will have space between them.",
+                "justify-content-evenly: Items will have equal space around them."
+            ]
+        },
+        {
+            "faze": "6",
+            "level": 5,
+            "class": "align-items-center",
+            "gameItems":[
+                {
+                    "icon": "pi pi-calendar"
+                }
+            ],
+            "bgItems": [
+                {
+                    "icon": "pi pi-calendar"
+                }
+            ],
+            "tips": [
+                "align-items-start: Items are positioned at the beginning of the container.",
+                "align-items-center: Items are positioned at the center of the container.",
+                "align-items-end: Items are positioned at the end of the container."
+            ]
+        },
+        {
+            "faze": "7",
+            "level": 6,
             "class": "align-items-end",
             "gameItems":[
                 {
@@ -51,48 +168,83 @@
                 {
                     "icon": "pi pi-calendar"
                 }
+            ],
+            "tips": [
+                "align-items-start: Items are positioned at the beginning of the container.",
+                "align-items-center: Items are positioned at the center of the container.",
+                "align-items-end: Items are positioned at the end of the container."
             ]
         },
         {
-            "faze": "4",
-            "level": 3,
-            "class": "justify-content-center",
+            "faze": "8",
+            "level": 7,
+            "class": "align-items-center justify-content-center",
             "gameItems":[
                 {
                     "icon": "pi pi-calendar"
-                },
-                {
-                    "icon": "pi pi-key"
                 }
             ],
             "bgItems": [
                 {
                     "icon": "pi pi-calendar"
-                },
-                {
-                    "icon": "pi pi-key"
                 }
+            ],
+            "tips": [
+                "Use align-items-* and justify-content-* classes together!"
             ]
         },
         {
-            "faze": "5",
-            "level": 4,
-            "class": "justify-content-end",
+            "faze": "9",
+            "level": 8,
+            "class": "align-items-end justify-content-end",
             "gameItems":[
                 {
                     "icon": "pi pi-calendar"
-                },
-                {
-                    "icon": "pi pi-key"
                 }
             ],
             "bgItems": [
                 {
                     "icon": "pi pi-calendar"
-                },
-                {
-                    "icon": "pi pi-key"
                 }
+            ],
+            "tips": [
+                "Use align-items-* and justify-content-* classes together!"
+            ]
+        },
+        {
+            "faze": "10",
+            "level": 9,
+            "class": "align-items-center justify-content-end",
+            "gameItems":[
+                {
+                    "icon": "pi pi-calendar"
+                }
+            ],
+            "bgItems": [
+                {
+                    "icon": "pi pi-calendar"
+                }
+            ],
+            "tips": [
+                "Use align-items-* and justify-content-* classes together!"
+            ]
+        },
+        {
+            "faze": "11",
+            "level": 10,
+            "class": "align-items-end justify-content-center",
+            "gameItems":[
+                {
+                    "icon": "pi pi-calendar"
+                }
+            ],
+            "bgItems": [
+                {
+                    "icon": "pi pi-calendar"
+                }
+            ],
+            "tips": [
+                "Use align-items-* and justify-content-* classes together!"
             ]
         }
     ]
