@@ -12,16 +12,16 @@ export class GameService {
             'currentFaze': 0
         };
 
-        localStorage.setItem('flex-game-deneme', JSON.stringify(gameStorage));
+        localStorage.setItem('flex-game-beginner', JSON.stringify(gameStorage));
     }
 
     getStorage() {
-        let storage = localStorage.getItem('flex-game-deneme');
+        let storage = localStorage.getItem('flex-game-beginner');
 
         return storage ? JSON.parse(storage) : null;
     }
 
     updateStorage(storage: any) {
-        localStorage.setItem('flex-game-deneme', JSON.stringify(storage));
+        localStorage.setItem('flex-game-beginner', JSON.stringify(storage));
     }
 }

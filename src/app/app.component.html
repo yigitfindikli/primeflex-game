@@ -1,9 +1,9 @@
 <div class="flex flex-column w-full h-full md:flex-row">
     <div class="wrapper flex w-full md:w-6">
-        <div class="container px-4">
+        <div class="container px-4 w-full">
             <div class="header">
                 <div class="flex justify-content-between my-4 align-items-center">
-                    <h2 class="text-4xl m-0" style="font-family: inherit;">PrimeFlex</h2>
+                    <h2 class="text-4xl m-0" style="font-family: inherit;">PrimeFlex Beginner</h2>
                     <div >
                         <button pButton class="p-button-text" icon="pi pi-angle-left" [disabled]="!prevActive" (click)="prev()"></button>
                         <p-dropdown [(ngModel)]="level" [options]="gameList" (onChange)="onDropdownChange()" class="mx-2" styleClass="border-none" optionLabel="faze" optionValue="level">
@@ -19,7 +19,7 @@
                     Welcome to PrimeFlex Game! Rules are simple. Match the icons with their shadows!
                 </p>
 
-                <ul class="list-disc text-700">
+                <ul class="list-disc text-700" *ngIf="gameList && gameList.length > 0">
                     <li class="mb-2" *ngFor="let tip of gameList[level].tips">
                         {{tip}}
                     </li>

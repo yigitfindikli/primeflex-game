@@ -55,15 +55,20 @@
                 },
                 {
                     "icon": "pi pi-key"
+                },
+                {
+                    "icon": "pi pi-compass"
                 }
             ],
             "bgItems": [
-
                 {
                     "icon": "pi pi-calendar"
                 },
                 {
                     "icon": "pi pi-key"
+                },
+                {
+                    "icon": "pi pi-compass"
                 }
             ],
             "tips": [
@@ -85,15 +90,20 @@
                 },
                 {
                     "icon": "pi pi-key"
+                },
+                {
+                    "icon": "pi pi-compass"
                 }
             ],
             "bgItems": [
-
                 {
                     "icon": "pi pi-calendar"
                 },
                 {
                     "icon": "pi pi-key"
+                },
+                {
+                    "icon": "pi pi-compass"
                 }
             ],
             "tips": [
@@ -115,15 +125,20 @@
                 },
                 {
                     "icon": "pi pi-key"
+                },
+                {
+                    "icon": "pi pi-compass"
                 }
             ],
             "bgItems": [
-
                 {
                     "icon": "pi pi-calendar"
                 },
                 {
                     "icon": "pi pi-key"
+                },
+                {
+                    "icon": "pi pi-compass"
                 }
             ],
             "tips": [
@@ -245,6 +260,223 @@
             ],
             "tips": [
                 "Use align-items-* and justify-content-* classes together!"
+            ]
+        },
+        {
+            "faze": "12",
+            "level": 11,
+            "class": "flex-row-reverse",
+            "gameItems":[
+                {
+                    "icon": "pi pi-calendar"
+                },
+                {
+                    "icon": "pi pi-key"
+                },
+                {
+                    "icon": "pi pi-compass"
+                }
+            ],
+            "bgItems": [
+                {
+                    "icon": "pi pi-calendar"
+                },
+                {
+                    "icon": "pi pi-key"
+                },
+                {
+                    "icon": "pi pi-compass"
+                }
+            ],
+            "tips": [
+                "flex-row: The flexible items are displayed horizontally, as a row.",
+                "flex-row-reverse: Same as row, but in reverse order.",
+                "flex-column: The flexible items are displayed vertically, as a column.",
+                "flex-column-reverse: Same as column, but in reverse order."
+            ]
+        },
+        {
+            "faze": "13",
+            "level": 12,
+            "class": "flex-column",
+            "gameItems":[
+                {
+                    "icon": "pi pi-calendar"
+                },
+                {
+                    "icon": "pi pi-key"
+                },
+                {
+                    "icon": "pi pi-compass"
+                }
+            ],
+            "bgItems": [
+                {
+                    "icon": "pi pi-calendar"
+                },
+                {
+                    "icon": "pi pi-key"
+                },
+                {
+                    "icon": "pi pi-compass"
+                }
+            ],
+            "tips": [
+                "flex-row: The flexible items are displayed horizontally, as a row.",
+                "flex-row-reverse: Same as row, but in reverse order.",
+                "flex-column: The flexible items are displayed vertically, as a column.",
+                "flex-column-reverse: Same as column, but in reverse order."
+            ]
+        },
+        {
+            "faze": "14",
+            "level": 13,
+            "class": "flex-column-reverse justify-content-end",
+            "gameItems":[
+                {
+                    "icon": "pi pi-calendar"
+                },
+                {
+                    "icon": "pi pi-key"
+                },
+                {
+                    "icon": "pi pi-compass"
+                }
+            ],
+            "bgItems": [
+                {
+                    "icon": "pi pi-calendar"
+                },
+                {
+                    "icon": "pi pi-key"
+                },
+                {
+                    "icon": "pi pi-compass"
+                }
+            ],
+            "tips": [
+                "Now you need to combine align-items-* or justify-content-* classes with PrimeFlex direction classes!",
+                "<p-spoiler> flex-column-reverse justify-content-end </p-spoiler>"
+            ]
+        },
+        {
+            "faze": "15",
+            "level": 14,
+            "class": "flex-column-reverse align-items-end",
+            "gameItems":[
+                {
+                    "icon": "pi pi-calendar"
+                },
+                {
+                    "icon": "pi pi-key"
+                },
+                {
+                    "icon": "pi pi-compass"
+                }
+            ],
+            "bgItems": [
+                {
+                    "icon": "pi pi-calendar"
+                },
+                {
+                    "icon": "pi pi-key"
+                },
+                {
+                    "icon": "pi pi-compass"
+                }
+            ],
+            "tips": [
+                "Now you need to combine align-items-* or justify-content-* classes with PrimeFlex direction classes!"
+            ]
+        },
+        {
+            "faze": "16",
+            "level": 15,
+            "class": "flex-column-reverse justify-content-between",
+            "gameItems":[
+                {
+                    "icon": "pi pi-calendar"
+                },
+                {
+                    "icon": "pi pi-key"
+                },
+                {
+                    "icon": "pi pi-compass"
+                }
+            ],
+            "bgItems": [
+                {
+                    "icon": "pi pi-calendar"
+                },
+                {
+                    "icon": "pi pi-key"
+                },
+                {
+                    "icon": "pi pi-compass"
+                }
+            ],
+            "tips": [
+                "Now you need to combine align-items-* or justify-content-* classes with PrimeFlex direction classes!"
+            ]
+        },
+        {
+            "faze": "17",
+            "level": 16,
+            "class": "flex-row-reverse justify-content-center align-items-end",
+            "gameItems":[
+                {
+                    "icon": "pi pi-calendar"
+                },
+                {
+                    "icon": "pi pi-key"
+                },
+                {
+                    "icon": "pi pi-compass"
+                }
+            ],
+            "bgItems": [
+                {
+                    "icon": "pi pi-calendar"
+                },
+                {
+                    "icon": "pi pi-key"
+                },
+                {
+                    "icon": "pi pi-compass"
+                }
+            ],
+            "tips": [
+                "Now you need to combine align-items-* or justify-content-* classes with PrimeFlex direction classes!"
+            ]
+        },
+        {
+            "faze": "17",
+            "level": 16,
+            "class": "flex-row-reverse justify-content-evenly align-items-center",
+            "gameItems":[
+                {
+                    "icon": "pi pi-calendar"
+                },
+                {
+                    "icon": "pi pi-key"
+                },
+                {
+                    "icon": "pi pi-compass"
+                }
+            ],
+            "bgItems": [
+                {
+                    "icon": "pi pi-calendar"
+                },
+                {
+                    "icon": "pi pi-key"
+                },
+                {
+                    "icon": "pi pi-compass"
+                }
+            ],
+            "tips": [
+                "Now you need to combine align-items-* or justify-content-* classes with PrimeFlex direction classes!"
             ]
         }
     ]
