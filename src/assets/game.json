@@ -13,6 +13,13 @@
                 {
                     "icon": "pi pi-calendar"
                 }
+            ],
+            "tips": [
+                "justify-items-start to to justify items against the start of the container’s main axis.",
+                "justify-items-center to to justify items against the center of the container’s main axis.",
+                "justify-items-end to to justify items against the end of the container’s main axis.",
+                "justify-items-around to justify items along the container’s main axis such that there is an equal amount of space on each side of each item.",
+                "justify-items-between to justify items along the container’s main axis such that there is an equal amount of space between each item."
             ]
         },
         {

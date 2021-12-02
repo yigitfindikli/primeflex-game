@@ -16,42 +16,16 @@
                 </div>
 
                 <p class="py-2">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
-                    soluta, at placeat similique modi nesciunt saepe nemo
-                    molestias atque, quisquam temporibus necessitatibus
-                    assumenda. Laudantium, excepturi consectetur. Libero impedit
-                    nostrum incidunt?
+                    Welcome to PrimeFlex Game! Rules are simple. Match the icons with their shadows!
                 </p>
 
                 <ul class="list-disc text-700">
-                    <li>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Ullam eaque, nesciunt accusantium sed, voluptates
-                        architecto distinctio beatae fugiat, pariatur doloribus
-                        itaque vero error nostrum quam consectetur similique
-                        numquam consequatur veniam!
-                    </li>
-                    <li>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Ullam eaque, nesciunt accusantium sed, voluptates
-                        architecto distinctio beatae fugiat, pariatur doloribus
-                        itaque vero error nostrum quam consectetur similique
-                        numquam consequatur veniam!
-                    </li>
-                    <li>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Ullam eaque, nesciunt accusantium sed, voluptates
-                        architecto distinctio beatae fugiat, pariatur doloribus
-                        itaque vero error nostrum quam consectetur similique
-                        numquam consequatur veniam!
+                    <li class="mb-2" *ngFor="let tip of gameList[level].tips">
+                        {{tip}}
                     </li>
                 </ul>
-                <p class="pt-2">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
-                    soluta, at placeat similique modi nesciunt saepe nemo
-                    molestias atque, quisquam temporibus necessitatibus
-                    assumenda. Laudantium, excepturi consectetur. Libero impedit
-                    nostrum incidunt?
+                <p class="pt-2" *ngIf="level === 0">
+                    Clue for first: Try justify-content-end!
                 </p>
             </div>
 
