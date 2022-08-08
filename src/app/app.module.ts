@@ -9,6 +9,7 @@ import { PlaygroundComponent } from './playground/playground.component';
 import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
 import { DropdownModule } from 'primeng/dropdown';
+import { ToastModule } from 'primeng/toast';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { DropdownModule } from 'primeng/dropdown';
     FormsModule,
     ButtonModule,
     InputTextModule,
+    ToastModule,
     DropdownModule,
     HttpClientModule
   ],

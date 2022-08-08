@@ -1,3 +1,39 @@
+<p-toast position="top-right">
+    <ng-template pTemplate="message">
+        <iframe src="https://giphy.com/embed/iurIHLBxms7UQ" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    </ng-template>
+</p-toast>
+<p-toast position="top-left">
+    <ng-template pTemplate="message">
+        <iframe src="https://giphy.com/embed/iurIHLBxms7UQ" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    </ng-template>
+</p-toast>
+<p-toast position="top-center">
+    <ng-template pTemplate="message">
+        <iframe src="https://giphy.com/embed/iurIHLBxms7UQ" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    </ng-template>
+</p-toast>
+<p-toast position="center">
+    <ng-template pTemplate="message">
+        <iframe src="https://giphy.com/embed/iurIHLBxms7UQ" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    </ng-template>
+</p-toast>
+<p-toast position="bottom-left">
+    <ng-template pTemplate="message">
+        <iframe src="https://giphy.com/embed/iurIHLBxms7UQ" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    </ng-template>
+</p-toast>
+<p-toast position="bottom-center">
+    <ng-template pTemplate="message">
+        <iframe src="https://giphy.com/embed/iurIHLBxms7UQ" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    </ng-template>
+</p-toast>
+<p-toast position="bottom-right">
+    <ng-template pTemplate="message">
+        <iframe src="https://giphy.com/embed/iurIHLBxms7UQ" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    </ng-template>
+</p-toast>
+
 <div class="flex flex-column w-full h-full md:flex-row">
     <div class="wrapper flex w-full md:w-6">
         <div class="container px-4 w-full">
@@ -8,7 +44,7 @@
                         <button pButton class="p-button-text" icon="pi pi-angle-left" [disabled]="!prevActive" (click)="prev()"></button>
                         <p-dropdown [(ngModel)]="level" [options]="gameList" (onChange)="onDropdownChange()" class="mx-2" styleClass="border-none" optionLabel="faze" optionValue="level">
                             <ng-template pTemplate="selectedItem">
-                                Faze {{level + 1}}
+                                Phase {{level + 1}}
                             </ng-template>
                         </p-dropdown>
                         <button pButton class="p-button-text" icon="pi pi-angle-right" [disabled]="!nextActive" (click)="next()"></button>
@@ -37,7 +73,7 @@
 "&gt;&lt;/div&gt;
 </div>
 </pre>
-                <button pButton class="align-self-end" [disabled]="!isValid" label="Next Faze"
+                <button pButton class="align-self-end" [disabled]="!isValid" [label]="nextActive ? 'Next Faze' : 'Finish'"
                     (click)="nextFaze()"></button>
             </div>
         </div>

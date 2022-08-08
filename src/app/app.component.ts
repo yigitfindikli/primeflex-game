@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { MessageService } from 'primeng/api';
 import { first } from 'rxjs/operators';
 import { GameService } from './game.service';
 
@@ -7,6 +8,7 @@ import { GameService } from './game.service';
     selector: 'app-root',
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.css'],
+    providers: [MessageService]
 })
 export class AppComponent {
     level: number = 0;
@@ -17,7 +19,7 @@ export class AppComponent {
 
     gameList: any[] = [];
 
-    constructor(private http: HttpClient, private gameService: GameService) {}
+    constructor(private http: HttpClient, private gameService: GameService, private messageService: MessageService) {}
 
     ngOnInit(): void {
         this.http.get<any>('assets/game.json').pipe(first()).subscribe((x) => {
@@ -32,6 +34,10 @@ export class AppComponent {
                 this.gameService.createStorage(this.gameList.length);
             }
         });
+    }
+
+    showYouYouYou() {
+        this.messageService.add({severity:'success', summary: 'You are the best!', sticky: true});
     }
 
     onValidation(event: any) {
@@ -68,6 +74,9 @@ export class AppComponent {
     next() {
         if (this.nextActive) {
             this.updateStorage(this.level + 1);
+        }
+        else {
+            this.showYouYouYou();
         }
     }
 
