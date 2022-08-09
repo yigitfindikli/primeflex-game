@@ -448,36 +448,6 @@
             "tips": [
                 "Now you need to combine align-items-* or justify-content-* classes with PrimeFlex direction classes!"
             ]
-        },
-        {
-            "faze": "17",
-            "level": 16,
-            "class": "flex-row-reverse justify-content-evenly align-items-center",
-            "gameItems":[
-                {
-                    "icon": "pi pi-calendar"
-                },
-                {
-                    "icon": "pi pi-key"
-                },
-                {
-                    "icon": "pi pi-compass"
-                }
-            ],
-            "bgItems": [
-                {
-                    "icon": "pi pi-calendar"
-                },
-                {
-                    "icon": "pi pi-key"
-                },
-                {
-                    "icon": "pi pi-compass"
-                }
-            ],
-            "tips": [
-                "Now you need to combine align-items-* or justify-content-* classes with PrimeFlex direction classes!"
-            ]
         }
     ]
 }
